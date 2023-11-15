@@ -6,7 +6,7 @@ const k = kaboom();
 // make background black in kaboom.js
 setBackground(Color.fromHex("#000000"));
 
-loadSprite("champion", "/sprites/champion_move.png", {
+loadSprite("champion", "./sprites/champion_move.png", {
   x: 0,
   y: 0,
   width: 256,
