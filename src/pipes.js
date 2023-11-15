@@ -1,11 +1,8 @@
 const spawnPipe = (PIPE_MIN, PIPE_OPEN, SPEED) => {
   const openSpace = PIPE_OPEN();
-  console.log("🚀 ~ file: pipes.js:3 ~ spawnPipe ~ openSpace:", openSpace);
   // calculate pipe positions
   const h1 = rand(PIPE_MIN, height() - PIPE_MIN - openSpace);
-  console.log("🚀 ~ file: pipes.js:5 ~ spawnPipe ~ h1:", h1);
   const h2 = height() - h1 - openSpace;
-  console.log("🚀 ~ file: pipes.js:7 ~ spawnPipe ~ h2:", h2);
 
   add([
     pos(width(), 0),

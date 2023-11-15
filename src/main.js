@@ -67,7 +67,7 @@ scene("game", () => {
     // check if bean passed the pipe
     if (p.pos.x + p.width <= player.pos.x && p.passed === false) {
       score++;
-      scoreLabel.text = score;
+      scoreLabel.text = `CURRENT: ${score}`;
       p.passed = true;
     }
   });
